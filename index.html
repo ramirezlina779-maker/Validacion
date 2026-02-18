@@ -1,19 +1,34 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 <!-- margin botton 3  -->
 <div class="container">
-    <div class="mb-3">
+    <form id="formulario">
+        <div class="mb-3">
         <label for="usuario" class="form-label">Usuario:</label>
         <input type="text" class="form-control" id="usuario">
-        <span id="mensaje" class="from-text"></span>
+        <span id="mensaje" class="form-text"></span>
+    
     </div>
 
     <div class="mb-3">
-        <label for="password" class="form.label">Contraseña</label>
+        <label for="password" class="form-label">Contraseña</label>
         <input type="password" class="form-control" id="password">
-        <span id="mensajePassword" class="form-text"></span>
+        <button type="button" class="btn btn-outline-secondary" id="togglePassword">
+            <i class="bi bi-eye" id="icono"></i>
+        </button>
+        <p id="contador">Caracteres: 0</p>
+        <span id="mensajePassword"></span>
+
     </div>
+
+    <button type="submit" class="btn btn-outline-primary">Enviar</button>
+    <p id="mensajeGeneral"></p>
+
+    </form>
 </div>
 
 <script src="validacion.js"></script>
+   
+    
